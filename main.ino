@@ -188,7 +188,7 @@ int le_tecla_IR(){
 // Transforma um código padrão IR em número 0-9
 int decodifica_tecla(int tecla_pressionada){
 	for (int i = 0; i < 10; i++)
-		if (COD_TECLA[i] = tecla_pressionada)
+		if (COD_TECLA[i] == tecla_pressionada)
 			return i;
 }
 

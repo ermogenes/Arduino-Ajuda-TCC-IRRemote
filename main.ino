@@ -51,7 +51,7 @@ void setup() {
 void loop() {
 	int tecla_recebida = 0;
 
-	// Na linha abaixo a tecla é simulada aleatóriamente.
+	// Na linha abaixo a tecla é simulada aleatoriamente.
 	// Substitua pelo código que leia o controle remoto e grave a tecla na variável tecla_recebida
 	tecla_recebida = simula_tecla();
 	// Ex: tecla_recebida = decodifica_tecla(le_tecla_IR());
@@ -66,8 +66,8 @@ void loop() {
 	if (millis() - tempo_ultima_tecla > INTERVALO_ENTRE_TECLAS){
 		Serial.println("Demorou o suficiente para exibir");
 		exibe(entrada[0], entrada[1]);
-		entrada[0] = -1;
-		entrada[1] = -1;
+		entrada[0] = LIMPAR;
+		entrada[1] = LIMPAR;
 	}
 
 	// Atualiza contador de tempo

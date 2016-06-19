@@ -194,15 +194,15 @@ int decodifica_tecla(int tecla_pressionada){
 
 // Rotaciona a posição da próxima tecla
 void atualiza_posicao(){
-	if (entrada[0] == -1){
+	if (entrada[0] == LIMPAR){
 		posicao_atual = 0;
-		entrada[1] = -1;
-	} else if (entrada[1] == -1){
+		entrada[1] = LIMPAR;
+	} else if (entrada[1] == LIMPAR){
 		posicao_atual = 1;
 	} else {
 		posicao_atual = 0;
-		entrada[0] = -1;
-		entrada[1] = -1;
+		entrada[0] = LIMPAR;
+		entrada[1] = LIMPAR;
 	}
 }
 
